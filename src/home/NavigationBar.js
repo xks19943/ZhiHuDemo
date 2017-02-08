@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-export default class Head extends Component{
+export default class NavigationBar extends Component{
     render(){
         const {optionMenu,title,onMessage,onMenu} = this.props;
         return(
