@@ -19,9 +19,9 @@ export default class NavigationBar extends Component{
                     <Icon name={'bars'} style={{fontSize:32,color:'#ffffff'}}/>
                 </TouchableOpacity>
                 <Text style={{flex:1,marginHorizontal:8,textAlignVertical:'center',color:'#ffffff',fontSize:16}}
-                      numberOfLines={1}>
-                    {title}
-                </Text>
+                             numberOfLines={1}>
+                {title}
+            </Text>
                 <TouchableOpacity style={{marginHorizontal:8}} onPress={onMessage}>
                     <Image
                         style={{width:32,height:32}}

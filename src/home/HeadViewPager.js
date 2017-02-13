@@ -29,8 +29,7 @@ export default class HeadViewPager extends Component{
                             borderRadius: 7, marginLeft: 7, marginRight: 7}} />}
                 activeDot={<View style={{backgroundColor: '#fff', width: 13, height: 13,
                             borderRadius: 7, marginLeft: 7, marginRight: 7}} />}
-                paginationStyle={{bottom: 70}}
-                >
+                paginationStyle={{bottom: 70}}>
                 {
                     topList.map((top,index)=>{
                         console.log(top.image);
