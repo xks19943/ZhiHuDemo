@@ -1,4 +1,4 @@
-package com.liaoye.zhihu.share;
+package com.liaoye.umeng;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,6 @@ import android.widget.Toast;
 
 import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.Callback;
-import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;

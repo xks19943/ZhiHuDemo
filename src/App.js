@@ -6,14 +6,13 @@ import {
     Navigator,
     BackAndroid,
     ToastAndroid,
-    PixelRatio
 } from 'react-native';
+import './utils/Global';
 import DrawerView from './home/DrawerView';
 import Splash from 'react-native-splash-screen';
 let nav;
 /*设置全局的屏幕宽高*/
-global.windowWidth = PixelRatio.get('window').width;
-global.windowHeight = PixelRatio.get('window').height;
+
 
 export default class App extends Component{
 

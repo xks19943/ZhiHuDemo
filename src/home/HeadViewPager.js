@@ -18,30 +18,28 @@ export default class HeadViewPager extends Component{
 
     render(){
         let { topList } = this.props;
-        if(topList.length == 0){
-            return null;
-        }
         return(
-            <Swiper
-                style={{width:windowWidth,height:200}}
-                autoplay={true}
-                dot={<View style={{backgroundColor: 'rgba(255,255,255,.3)', width: 13, height: 13,
-                            borderRadius: 7, marginLeft: 7, marginRight: 7}} />}
-                activeDot={<View style={{backgroundColor: '#fff', width: 13, height: 13,
-                            borderRadius: 7, marginLeft: 7, marginRight: 7}} />}
-                paginationStyle={{bottom: 70}}>
-                {
-                    topList.map((top,index)=>{
-                        console.log(top.image);
-                        return (
-                             <Image
-                                key={index}
-                                style={{width:windowWidth,height:200}}
-                                source={{uri:top.image}}/>
-                        );
-                    })
-                }
-            </Swiper>
+            <View style={{width:WindowWidth,height:WindowWidth/1.8}}>
+                <Swiper
+                    style={{width:WindowWidth,height:WindowWidth/1.8}}
+                    autoplay={true}
+             /*       dot={<View style={{backgroundColor: 'rgba(255,255,255,.3)', width: 13, height: 13,
+                                borderRadius: 7, marginLeft: 7, marginRight: 7}} />}
+                    activeDot={
+                                <View style={{backgroundColor: '#fff', width: 13, height: 13,
+                                borderRadius: 7, marginLeft: 7, marginRight: 7}} />}*/>
+                    {
+                        topList.map((top,index)=>{
+                            return (
+                                 <Image
+                                    key={index}
+                                    style={{width:WindowWidth,height:WindowWidth/1.8}}
+                                    source={{uri:top.image}}/>
+                            );
+                        })
+                    }
+                </Swiper>
+            </View>
         );
     }
 }

@@ -1,4 +1,4 @@
-package com.liaoye.zhihu.share;
+package com.liaoye.umeng;
 
 import android.os.Handler;
 
@@ -15,9 +15,9 @@ import java.util.List;
 /**友盟分享管理类
  * Created by 明明 on 2017/2/10.
  */
-public class SharePackage implements ReactPackage {
+public class UMSharePackage implements ReactPackage {
     private Handler handler;
-    public SharePackage(Handler handler) {
+    public UMSharePackage(Handler handler) {
         this.handler = handler;
     }
 

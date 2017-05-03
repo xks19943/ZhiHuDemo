@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.liaoye.umeng">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58a1aa2b7f2c7473c40012bf">
+        </meta-data>
+
+        <!--&lt;!&ndash;微信分享&ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name=".zhihu.wxapi.WXEntryActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:exported="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+
+        <!--QQ分享精简版-->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+    </application>
+
+
+</manifest>

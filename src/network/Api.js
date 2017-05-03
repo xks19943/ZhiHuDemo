@@ -23,6 +23,7 @@ var Api = {
      */
     getRequest:function(url,params){
         var isOk;
+        console.log("请求:",url + this.toQueryString(params));
         return new Promise((resolve,reject)=>{
             fetch(url +this.toQueryString(params),{
                 method: 'get',

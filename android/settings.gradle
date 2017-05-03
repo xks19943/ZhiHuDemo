@@ -1,2 +1,2 @@
 rootProject.name = 'ZhiHuDemo'
-include ':app'
+include ':app', ':umeng'

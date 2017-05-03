@@ -16,7 +16,7 @@ export default class NavigationBar extends Component{
         return(
             <View style={{height:44,flexDirection:'row',alignItems:'center',paddingHorizontal:8,backgroundColor:'#03A9F4'}}>
                 <TouchableOpacity style={{marginHorizontal:8}} onPress={optionMenu}>
-                    <Icon name={'bars'} style={{fontSize:32,color:'#ffffff'}}/>
+                    <Icon name={'bars'} style={{fontSize:24,color:'#ffffff'}}/>
                 </TouchableOpacity>
                 <Text style={{flex:1,marginHorizontal:8,textAlignVertical:'center',color:'#ffffff',fontSize:16}}
                              numberOfLines={1}>
@@ -29,7 +29,7 @@ export default class NavigationBar extends Component{
                 </TouchableOpacity>
                 <TouchableOpacity style={{marginHorizontal:8}} onPress={onMenu}>
                     <Image
-                        style={{width:32,height:32}}
+                        style={{width:24,height:24}}
                         source={{uri:'menu'}}/>
                 </TouchableOpacity>
             </View>

@@ -26,7 +26,7 @@ export default class DrawerView extends Component{
                 type="overlay"
                 openDrawerOffset={0.3}
                 content={<MenuView/>}>
-                <HomeView optionMenu={this.openMenu}/>
+                <HomeView optionMenu={this.openMenu} navigator={this.props.navigator}/>
             </Drawer>
         );
     }

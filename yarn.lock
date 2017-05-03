@@ -2933,6 +2933,10 @@ react-native-drawer@^2.3.0:
   dependencies:
     tween-functions "^1.0.1"
 
+react-native-parallax-scroll-view@^0.19.0:
+  version "0.19.0"
+  resolved "http://registry.npm.taobao.org/react-native-parallax-scroll-view/download/react-native-parallax-scroll-view-0.19.0.tgz#23b9af1f13249a610f4641e2582a58997df7d80a"
+
 react-native-splash-screen@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/react-native-splash-screen/download/react-native-splash-screen-2.0.0.tgz#d03caaef7d92a0ac1eab60ee4204a1d6bf8234ec"
